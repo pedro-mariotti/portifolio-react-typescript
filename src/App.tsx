@@ -2,7 +2,7 @@ import { useState } from "react";
 import Project from "./components/Project";
 import calculatorPreview from "./assets/age-calculator.png"
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <div className="flex max-h-max min-h-screen flex-col justify-between bg-white text-black gap-16">
@@ -38,10 +38,10 @@ function App() {
               <button className="p-4 bg-orange text-xl font-bold rounded-t-4xl">Game Projects</button>
             </div>
             <ul className="bg-orange flex flex-col items-center justify-center p-8 gap-12">
+              {/* <Project img_src={calculatorPreview} title="Age calculator App">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos saepe nostrum temporibus. Deleniti illo qui ipsum. Corrupti, nisi ut laborum ipsum exercitationem facilis, asperiores possimus nobis quae animi nam.</Project>
               <Project img_src={calculatorPreview} title="Age calculator App">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos saepe nostrum temporibus. Deleniti illo qui ipsum. Corrupti, nisi ut laborum ipsum exercitationem facilis, asperiores possimus nobis quae animi nam.</Project>
               <Project img_src={calculatorPreview} title="Age calculator App">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos saepe nostrum temporibus. Deleniti illo qui ipsum. Corrupti, nisi ut laborum ipsum exercitationem facilis, asperiores possimus nobis quae animi nam.</Project>
-              <Project img_src={calculatorPreview} title="Age calculator App">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos saepe nostrum temporibus. Deleniti illo qui ipsum. Corrupti, nisi ut laborum ipsum exercitationem facilis, asperiores possimus nobis quae animi nam.</Project>
-              <Project img_src={calculatorPreview} title="Age calculator App">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos saepe nostrum temporibus. Deleniti illo qui ipsum. Corrupti, nisi ut laborum ipsum exercitationem facilis, asperiores possimus nobis quae animi nam.</Project>
+              <Project img_src={calculatorPreview} title="Age calculator App">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos saepe nostrum temporibus. Deleniti illo qui ipsum. Corrupti, nisi ut laborum ipsum exercitationem facilis, asperiores possimus nobis quae animi nam.</Project> */}
             </ul>
           </div>
         </section>
