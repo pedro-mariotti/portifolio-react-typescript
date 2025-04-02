@@ -1,6 +1,7 @@
-import { useState } from "react";
-import Project from "./components/Project";
-import calculatorPreview from "./assets/age-calculator.png"
+// import { useState } from "react";
+// import Project from "./components/Project";
+// import calculatorPreview from "./assets/age-calculator.png"
+
 function App() {
   // const [count, setCount] = useState(0);
 
