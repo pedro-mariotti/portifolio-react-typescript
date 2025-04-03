@@ -1,7 +1,4 @@
 import { useState } from "react";
-import Arrow from "../assets/arrow.svg"
-import ReactIcon from "../assets/react.svg"
-
 
 function SkillCard(props: { title: string; img_src: string | undefined; children: string}) {
   const [cardOpen, setCardOpen] = useState(false);

@@ -3,8 +3,8 @@ import ReactIcon from "../assets/react.svg"
 
 function Project(props: { img_src: string; title: string; children: string; project_url: string}) {
   return (
-    <li className="w-[95%] flex gap-8 bg-bonewhite rounded-lg p-8 border-black border-2">
-        <img className="w-1/4 rounded-lg border-s-black border-2" src={props.img_src} alt="project preview"/>
+    <li className="w-[95%] flex lg:flex-row flex-col gap-8 bg-bonewhite rounded-lg p-8 border-black border-2">
+        <img className="w-64 rounded-lg border-s-black border-2" src={props.img_src} alt="project preview"/>
         <div className="flex flex-col gap-2">
             <div className="flex gap-4">
               <h2 className="text-3xl font-bold">{props.title}</h2>

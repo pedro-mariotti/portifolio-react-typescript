@@ -4,6 +4,9 @@ import calculatorPreview from "./assets/age-calculator.png"
 import ticketPreview from "./assets/ticket.png"
 import SkillCard from "./components/SkillCard";
 import ReactIcon from "./assets/react.svg"
+import GithubIcon from "./assets/icons8-github.svg"
+import LinkedinIcon from "./assets/bxl--linkedin-square.svg"
+import MailIcon from "./assets/material-symbols--mail.svg"
 
 
 function App() {
@@ -62,11 +65,16 @@ function App() {
           </ul>
         </section>
       </main>
-      <footer className="justify-self-end bg-orange border-t-2">
-        <p>Contacts</p>
-        <ul>
-          <li>Github</li>
-          <li>Linkedin</li>
+      <footer className="justify-self-end bg-orange border-t-2 flex flex-col justify-center items-center p-4">
+        <h2 className="font-bold text-xl">Socials</h2>
+        <ul className="flex gap-4">
+          <li>
+            <a href="https://github.com/pedro-mariotti" className="flex gap-2"><img src={GithubIcon} alt="github icon by Icons8" />@pedro-mariotti</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/pedro-mariotti-4488121a2/" className="flex gap-2"><img src={LinkedinIcon} alt="Linkedin icon" />Linkedin</a>
+          </li>
+          <li><a href="mailto:mariottipedro14@gmail.com" className="flex gap-2"><img src={MailIcon} alt="Mail icon" />mariottipedro14@gmail.com</a></li>
         </ul>
       </footer>
     </div>
