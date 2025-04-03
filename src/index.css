@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,9 +7,15 @@
   --color-pastel: #D3D0CB;
   --color-white: #E7E5DF;
   --color-green: #44BBA4;
-
+  --color-bonewhite: #F9F6EE;
+  --font-inconsolata: "Quicksand", sans-serif;
 }
-
+p,h3, button {
+  font-family: Quicksand;
+}
+h1,h2 {
+  font-family: Bebas Neue;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
