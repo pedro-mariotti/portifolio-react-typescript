@@ -1,21 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-orange: #FF6900;
-  --color-black: #483D3F;
-  --color-pastel: #D3D0CB;
-  --color-white: #E7E5DF;
-  --color-green: #44BBA4;
-  --color-bonewhite: #F9F6EE;
+  --color-orange: #ff6900;
+  --color-black: #483d3f;
+  --color-pastel: #d3d0cb;
+  --color-white: #e7e5df;
+  --color-green: #44bba4;
+  --color-bonewhite: #f9f6ee;
+
+  /* Dark theme colors */
+  --color-primary: #1f1b24;
+  --color-secondary: #282a36;
+  --color-accent: #44475a;
+  --color-background: #6272a4;
+  --color-text: #8be9fd;
+  --color-buttons: #50fa7b;
+
   --font-inconsolata: "Quicksand", sans-serif;
 }
-p,h3, button {
+
+p,
+h3,
+button {
   font-family: Quicksand;
 }
-h1,h2 {
+h1,
+h2 {
   font-family: Bebas Neue;
 }
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -29,6 +43,30 @@ h1,h2 {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Light theme variables */
+  --bg-primary: #ffffff;
+  --bg-secondary: #ff6900;
+  --bg-accent: #f9f6ee;
+  --text-primary: #000000;
+  --text-secondary: #483d3f;
+  --text-accent: #ff6900;
+  --border-color: #483d3f;
+  --button-bg: #44bba4;
+  --button-hover: #309580;
+}
+
+/* Dark theme variables */
+.dark {
+  --bg-primary: #1f1b24;
+  --bg-secondary: #282a36;
+  --bg-accent: #44475a;
+  --text-primary: #8be9fd;
+  --text-secondary: #8be9fd;
+  --text-accent: #50fa7b;
+  --border-color: #44475a;
+  --button-bg: #50fa7b;
+  --button-hover: #50fa7b;
 }
 
 body {
@@ -39,6 +77,11 @@ body {
   width: 100vw;
   border: none;
   outline: none;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 button {
   cursor: pointer;
